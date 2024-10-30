@@ -76,10 +76,5 @@ A blockchain consists of blocks, each containing:
    - Uses a decentralized model instead of centralized storage.
 
 
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
