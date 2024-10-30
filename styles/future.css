@@ -1,0 +1,148 @@
+:root {
+  --primary-color: #ebff6c;
+  --background-color-gray: #333;
+  --accent-color: #444;
+  --border-color: #444;
+  --hover-background-color: #d4e056;
+  --text-color: #ffffff;
+  --title-font-size: 36px;
+  --subtitle-font-size: 1.8em;
+  --card-padding: 20px;
+  --margin-bottom: 30px;
+}
+
+.future-container {
+  padding: 40px 20px 20px 20px;
+  margin: 0 auto;
+}
+
+.future-title {
+  font-size: var(--title-font-size);
+  font-weight: 600;
+  color: var(--text-color);
+  text-align: left;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.future-title::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: -10px;
+  width: 50%;
+  height: 4px;
+  background-color: var(--primary-color);
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.future-card {
+  background-color: var(--background-color-gray);
+  padding: var(--card-padding);
+  margin-bottom: var(--margin-bottom);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  color: var(--text-color);
+}
+
+.future-subtitle {
+  font-size: var(--subtitle-font-size);
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.future-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.future-card ul,
+.future-card li {
+  background-color: var(--accent-color);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid var(--primary-color);
+}
+
+.faq-container {
+  margin-top: 50px;
+}
+
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  background-color: #222;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: black;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.accordion-header.active {
+  background-color: var(--hover-background-color);
+  color: #222;
+}
+
+.accordion-title {
+  margin-right: 10px;
+}
+
+.accordion-arrow {
+  font-size: 1.5em;
+  transition: transform 0.3s ease;
+}
+
+.accordion-header.active .accordion-arrow {
+  transform: rotate(0deg);
+}
+
+.accordion-body {
+  display: none;
+  padding: 15px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 1em;
+  line-height: 1.5;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-body p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .future-title {
+    font-size: 2em;
+  }
+
+  .future-subtitle {
+    font-size: 1.5em;
+  }
+
+  .future-card ul,
+  .future-card li {
+    font-size: 1em;
+  }
+}

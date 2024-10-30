@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future of Blockchain</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/future.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    <script src="scripts/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logos/logo.png" alt="Logo" id="logo" style="height: 80px;">
+        <h1>Future of Blockchain</h1>
+        <button id="toggle-menu">
+            <img src="images/icons/menu.png" alt="Menu" style="width: 25px; height: 25px;" class="logo-image">
+        </button>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html">Background</a></li>
+                <li><a href="how_it_works.html">How It Works</a></li>
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="security.html">Security</a></li>
+                <li><a href="future.html" class="active">Future</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <span class="tooltip" id="tooltip"></span>
+        <section class="future-container">
+            <h2 class="future-title">The Future of Blockchain</h2>
+
+            <div class="future-card">
+                <h3 class="future-subtitle">Blockchain Beyond Cryptocurrencies</h3>
+                <p>Blockchain is evolving beyond cryptocurrencies, with emerging applications in:</p>
+                <ul>
+                    <li>Decentralized Finance (DeFi): DeFi enables financial services such as lending, borrowing, and
+                        trading without traditional banks or financial institutions <a
+                            href="https://www.weforum.org/agenda/2024/05/global-cryptocurrency-regulations-changing/"
+                            class="tooltip-link"
+                            data-tooltip="Visit World Economic Forum - Blockchain Regulations for more information"
+                            target="_blank">[REF:
+                            20]</a>.</li>
+                    <li>Internet of Things (IoT): Blockchain can secure device-to-device communication, enhancing IoT
+                        security <a
+                            href="https://medium.com/@cecilia.ouko/blockchain-voting-revolutionizing-democracy-with-transparency-and-security-f9788fe7b77c"
+                            class="tooltip-link"
+                            data-tooltip="Visit Blockchain Voting: Revolutionizing Democracy with Transparency and Security for more information"
+                            target="_blank">[REF:
+                            21]</a>.</li>
+                </ul>
+            </div>
+
+
+            <div class="future-card">
+                <h3 class="future-subtitle">Environmental Concerns and Solutions</h3>
+                <p>While blockchain’s energy consumption is a concern, alternative consensus mechanisms like PoS aim to
+                    reduce its environmental impact. Ethereum 2.0’s PoS model, for example, is projected to reduce
+                    energy consumption by over 99% <a
+                        href="https://www.microsoft.com/en-us/garage/wall-of-fame/supply-chain-blockchain-initiative/"
+                        class="tooltip-link"
+                        data-tooltip="Visit Microsoft Azure - Blockchain for Supply Chain for more information"
+                        target="_blank">[REF:
+                        22]</a>.</p>
+            </div>
+
+            <div class="future-card">
+                <h3 class="future-subtitle">Regulatory Developments</h3>
+                <p>Governments and regulatory bodies are developing frameworks to govern blockchain usage. These
+                    frameworks will promote trust, adoption, and prevent illegal activities like money laundering <a
+                        href="https://hbr.org/2016/05/the-impact-of-the-blockchain-goes-beyond-financial-services"
+                        class="tooltip-link"
+                        data-tooltip="Visit Harvard Business Review - The Impact of the Blockchain Goes Beyond Financial Services for more information"
+                        target="_blank">[REF:
+                        23]</a>.
+                </p>
+            </div>
+
+            <div class="divider-container">
+                <div class="divider"></div>
+                <div class="divider-circle"></div>
+            </div>
+
+            <!-- FAQs Section -->
+            <div class="faq-container">
+                <h2 class="future-title">FAQs about Blockchain</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header active">
+                            <span class="accordion-title">What is Blockchain Technology?</span>
+                            <span class="accordion-arrow">▼</span>
+                        </button>
+                        <div class="accordion-body" style="display: block;">
+                            <p>Blockchain is a decentralized digital ledger that records transactions across many
+                                computers in a way that ensures the security and immutability of data.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="accordion-title">How does Blockchain improve security?</span>
+                            <span class="accordion-arrow">►</span>
+                        </button>
+                        <div class="accordion-body" style="display: none;">
+                            <p>Blockchain improves security by using cryptographic techniques and consensus mechanisms
+                                like PoW and PoS, making it nearly impossible to alter data without detection.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="accordion-title">What are Smart Contracts?</span>
+                            <span class="accordion-arrow">►</span>
+                        </button>
+                        <div class="accordion-body" style="display: none;">
+                            <p>Smart contracts are self-executing contracts with the terms directly written into code.
+                                They automatically enforce and execute actions based on predefined rules.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="accordion-title">What is the difference between public and private
+                                blockchains?</span>
+                            <span class="accordion-arrow">►</span>
+                        </button>
+                        <div class="accordion-body" style="display: none;">
+                            <p>Public blockchains are open to everyone, allowing anyone to participate in the network,
+                                whereas private blockchains are restricted to a specific group of participants, offering
+                                more control and privacy.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="accordion-title">How is Blockchain different from traditional databases?</span>
+                            <span class="accordion-arrow">►</span>
+                        </button>
+                        <div class="accordion-body" style="display: none;">
+                            <p>Unlike traditional databases, where data is stored centrally, blockchain uses a
+                                decentralized model where data is distributed across multiple nodes, ensuring
+                                transparency and reducing the risk of tampering.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="accordion-title">What is a consensus mechanism in Blockchain?</span>
+                            <span class="accordion-arrow">►</span>
+                        </button>
+                        <div class="accordion-body" style="display: none;">
+                            <p>A consensus mechanism is a process used in blockchain networks to agree on the validity
+                                of transactions. Common methods include Proof of Work (PoW) and Proof of Stake (PoS),
+                                which ensure that all participants reach a consensus on the blockchain's state.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="accordion-title">Can Blockchain be hacked?</span>
+                            <span class="accordion-arrow">►</span>
+                        </button>
+                        <div class="accordion-body" style="display: none;">
+                            <p>While blockchain is highly secure, no system is completely hack-proof. Blockchain's
+                                decentralized and cryptographic nature makes it extremely difficult to alter data, but
+                                vulnerabilities can exist in external applications or if enough nodes are compromised.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="accordion-title">What is a blockchain node?</span>
+                            <span class="accordion-arrow">►</span>
+                        </button>
+                        <div class="accordion-body" style="display: none;">
+                            <p>A blockchain node is any device connected to the blockchain network that stores a copy of
+                                the blockchain and helps validate and relay transactions. Nodes are essential for
+                                maintaining the decentralized nature of the blockchain.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="accordion-title">How does blockchain impact industries outside of
+                                finance?</span>
+                            <span class="accordion-arrow">►</span>
+                        </button>
+                        <div class="accordion-body" style="display: none;">
+                            <p>Blockchain technology has applications across various industries such as healthcare,
+                                supply chain management, real estate, and voting systems. Its ability to create
+                                transparent, immutable records improves efficiency, security, and trust in many sectors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logos/logo.png" alt="Logo">
+                <p>“The blockchain does one thing: It replaces third-party trust with mathematical proof that something
+                    happened.” </p>
+            </div>
+            <div class="footer-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="index.html">Background</a></li>
+                    <li><a href="how_it_works.html">How it works</a></li>
+                    <li><a href="applications.html">Applications</a></li>
+                    <li><a href="security.html">Security</a></li>
+                    <li><a href="future.html">Future</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <img src="images/shenuka.jpg" alt="Shenuka Gunathilake" class="profile-picture" />
+                <h3>Shenuka Gunathilake</h3>
+                <p>Web and Mobile App Developer</p>
+                <p>Undergraduate at Macquarie University</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/shenuka/?originalSubdomain=au" target="_blank">Shenuka Gunathilake</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Blockchain Project. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

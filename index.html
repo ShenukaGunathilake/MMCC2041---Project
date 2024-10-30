@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Technology</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/crypto-grid.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    <script src="scripts/main.js"></script>
+    <script src="scripts/crypto.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logos/logo.png" alt="Logo" id="logo" style="height: 80px;">
+        <h1>Blockchain Technology</h1>
+        <button id="toggle-menu">
+            <img src="images/icons/menu.png" alt="Menu" style="width: 25px; height: 25px;" class="logo-image">
+        </button>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html" class="active">Background</a></li>
+                <li><a href="how_it_works.html">How It Works</a></li>
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="security.html">Security</a></li>
+                <li><a href="future.html">Future</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+        <span class="tooltip" id="tooltip"></span>
+        <div class="home-top-banner">
+            <div class="home-top-banner-content">
+                <h1>Explore, Trade, and Prosper with <span>Blockchain</span> Technology</h1>
+                <p>Blockchain is a decentralized digital ledger that records transactions across multiple computers,
+                    ensuring
+                    data integrity and security. Originally developed as the technology behind Bitcoin, blockchain has
+                    since
+                    evolved into various other applications and is now considered a revolutionary technology across
+                    industries.
+                </p>
+
+                <p>Blockchain technology allows for a distributed, transparent, and tamper-proof data storage system,
+                    making it
+                    ideal for applications in industries that require high levels of data integrity and transparency,
+                    such as
+                    finance, healthcare, and supply chain management
+                    <a href="https://www.ibm.com/blockchain/what-is-blockchain" class="tooltip-link"
+                        data-tooltip="Visit IBM's Blockchain page for more information" target="_blank">[REF: 1]</a>.
+                </p>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/crypto-asset.png" alt="Introduction to Blockchain" class="home-top-banner-image">
+                </figure>
+            </div>
+        </div>
+
+        <div class="divider-container">
+            <div class="divider"></div>
+            <div class="divider-circle"></div>
+        </div>
+
+        <div class="crypto-container">
+            <h1>Live Cryptocurrency Prices</h1>
+            <div id="crypto-container" class="crypto-grid">
+                <div class="crypto-card" id="bitcoin">
+                    <h2>Bitcoin (BTC)</h2>
+                    <p class="price">$<span id="bitcoin-price">0.00</span></p>
+                </div>
+                <div class="crypto-card" id="ethereum">
+                    <h2>Ethereum (ETH)</h2>
+                    <p class="price">$<span id="ethereum-price">0.00</span></p>
+                </div>
+                <div class="crypto-card" id="litecoin">
+                    <h2>Litecoin (LTC)</h2>
+                    <p class="price">$<span id="litecoin-price">0.00</span></p>
+                </div>
+                <div class="crypto-card" id="ripple">
+                    <h2>Ripple (XRP)</h2>
+                    <p class="price">$<span id="ripple-price">0.00</span></p>
+                </div>
+                <div class="crypto-card" id="dogecoin">
+                    <h2>Dogecoin (DOGE)</h2>
+                    <p class="price">$<span id="dogecoin-price">0.00</span></p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="divider-container">
+            <div class="divider"></div>
+            <div class="divider-circle"></div>
+        </div>
+
+        <div class="home-video-section">
+            <h1>What is Blockchain?</h1>
+            <div class="home-video-section-content">
+                <figure>
+                    <iframe width="100%" height="415" class="home-video-section-video"
+                        src="https://www.youtube.com/embed/QJn28fFKUR0?autoplay=1&mute=1&controls=1&loop=1&playlist=QJn28fFKUR0"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                    </iframe>
+                    <figcaption>Watch: Blockchain explained</figcaption>
+                </figure>
+
+                <figure>
+                    <iframe width="100%" height="415" class="home-video-section-video"
+                        src="https://www.youtube.com/embed/XaTqdCgbk7Y?&mute=1&controls=1&loop=1&playlist=XaTqdCgbk7Y"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                    </iframe>
+                    <figcaption>Watch: Blockchain explained</figcaption>
+                </figure>
+            </div>
+
+        </div>
+
+        <div class="divider-container">
+            <div class="divider"></div>
+            <div class="divider-circle"></div>
+        </div>
+
+
+        <div class="feature-container">
+            <h1>Key Features of Blockchain</h1>
+            <div id="feature-container" class="feature-grid">
+                <div class="feature-card" id="orangecard">
+                    <h2>Decentralization</h2>
+                    <p class="description">Blockchain operates on a peer-to-peer network where no single entity has
+                        complete control. This decentralized nature means no one has overarching authority, making
+                        it more secure and trustworthy than centralized systems <a
+                            href="https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/"
+                            class="tooltip-link" data-tooltip="Visit Ethereum Consensus Mechanisms for more information"
+                            target="_blank">[REF:
+                            2]</a>.</p>
+                </div>
+                <div class="feature-card" id="orangecard">
+                    <h2>Transparency</h2>
+                    <p class="description">Every transaction on a blockchain is recorded on a public ledger, accessible
+                        to all
+                        users within the network. This openness is particularly beneficial in applications that require
+                        transparency and trust, such as government processes, voting, and supply chains <a
+                            href="https://www.sciencedirect.com/science/article/pii/S266660302100021X"
+                            class="tooltip-link"
+                            data-tooltip="Visit Blockchain technology applications in healthcare for more information"
+                            target="_blank">[REF:
+                            3]</a>.</p>
+                </div>
+                <div class="feature-card" id="orangecard">
+                    <h2>Immutability and Security</h2>
+                    <p class="description">Blockchain transactions are secured using cryptographic hashing and consensus
+                        mechanisms. Once a transaction is recorded, it becomes extremely challenging to alter, making
+                        blockchain a highly secure system <a href="https://www.coindesk.com/learn/what-is-proof-of-work"
+                            class="tooltip-link" data-tooltip="Visit CoinDesk - Proof of Work for more information"
+                            target="_blank">[REF: 4]</a>.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="divider-container">
+            <div class="divider"></div>
+            <div class="divider-circle"></div>
+        </div>
+
+        <div class="blog-container">
+            <h2 class="blog-section-title">Useful Blogs & Articles</h2>
+
+            <div class="blog-wrapper">
+                <div class="blog-card">
+                    <img src="images/blogs/trump-kama-blog.webp" alt="Buy TRUMP or KAMA">
+                    <div class="blog-content">
+                        <span class="blog-category">By Blockchain.com</span>
+                        <h3 class="blog-title">Buy TRUMP or KAMA</h3>
+                        <p>After kicking off Blockchian.com memecoins with SHIB, FLOKI, PEPE, and MOG earlier this week,
+                            today we're listing KAMA and TRUMP. ...</p>
+                        <p class="blog-date">Oct 25, 2024</p>
+                        <a href="https://www.blockchain.com/blog/posts/buy-trump-or-kama" target="_blank"><span
+                                class="read-more">→</span></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="images/blogs/meme-coins-blog.webp" alt="It's time to ape in on memecoins with Blockchain.com">
+                    <div class="blog-content">
+                        <span class="blog-category">By Blockchain.com</span>
+                        <h3 class="blog-title">It's time to ape in on memecoins with Blockchain.com</h3>
+                        <p>The roar of the memecoin crowd is undeniable, and Blockchain.com is excited to announce we’re
+                            joining the party. Get ready to trad...</p>
+                        <p class="blog-date">Oct 24, 2024</p>
+                        <a href="https://www.blockchain.com/blog/posts/its-time-to-ape-in-on-memecoins-with-blockchaincom"
+                            target="_blank"><span class="read-more">→</span></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="images/blogs/product-highlights-blog.webp" alt="Product Highlights: September 2024">
+                    <div class="blog-content">
+                        <span class="blog-category">By Jess Petrides</span>
+                        <h3 class="blog-title">Product Highlights: September 2024</h3>
+                        <p>Discover Super App Web, Base Network and our Earn Products</p>
+                        <p class="blog-date">Oct 11, 2024</p>
+                        <a href="https://www.blockchain.com/blog/posts/product-highlights-september-2024"
+                            target="_blank"><span class="read-more">→</span></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="images/blogs/intro-eth-blog.webp" alt="Introducing Ethereum in Active Rewards">
+                    <div class="blog-content">
+                        <span class="blog-category">By Blockchain.com</span>
+                        <h3 class="blog-title">Introducing Ethereum in Active Rewards</h3>
+                        <p>Unlock new earning potential with Ethereum in Active Rewards at Blockchain.com. Learn how to
+                            earn up to 8% weekly on your ETH by p...</p>
+                        <p class="blog-date">Oct 10, 2024</p>
+                        <a href="https://www.blockchain.com/blog/posts/introducing-ethereum-in-active-rewards"
+                            target="_blank"><span class="read-more">→</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prev-next">
+                <button id="prev">←</button>
+                <button id="next">→</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logos/logo.png" alt="Logo">
+                <p>“The blockchain does one thing: It replaces third-party trust with mathematical proof that something
+                    happened.” </p>
+            </div>
+            <div class="footer-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="index.html">Background</a></li>
+                    <li><a href="how_it_works.html">How it works</a></li>
+                    <li><a href="applications.html">Applications</a></li>
+                    <li><a href="security.html">Security</a></li>
+                    <li><a href="future.html">Future</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <img src="images/shenuka.jpg" alt="Shenuka Gunathilake" class="profile-picture" />
+                <h3>Shenuka Gunathilake</h3>
+                <p>Web and Mobile App Developer</p>
+                <p>Undergraduate at Macquarie University</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/shenuka/?originalSubdomain=au" target="_blank">Shenuka Gunathilake</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Blockchain Project. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

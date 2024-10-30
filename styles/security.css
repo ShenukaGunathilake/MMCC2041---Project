@@ -1,0 +1,107 @@
+:root {
+  --primary-color: #ebff6c;
+  --dark-background: #1f2019;
+  --darker-background: #141414;
+  --white-color: #fff;
+  --font-size-small: 16px;
+  --font-size-medium: 2em;
+  --font-size-large: 36px;
+  --padding-small: 10px;
+  --padding-medium: 20px;
+  --margin-bottom-large: 40px;
+  --margin-bottom-small: 20px;
+}
+
+.security-container {
+  padding: var(--padding-medium);
+  margin: 0 auto;
+}
+
+.security-section {
+  margin-bottom: var(--margin-bottom-large);
+}
+
+.security-subtitle {
+  font-size: var(--font-size-large);
+  font-weight: 600;
+  color: var(--white-color);
+  margin-bottom: var(--padding-small);
+  display: inline-block;
+  position: relative;
+}
+
+.security-subtitle::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: -10px;
+  width: 50%;
+  height: 4px;
+  background-color: var(--primary-color);
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.security-image-wrapper {
+  text-align: center;
+  margin-bottom: var(--margin-bottom-small);
+}
+
+.security-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  background-color: var(--white-color);
+  cursor: zoom-in;
+}
+
+.security-text {
+  font-size: var(--font-size-small);
+  line-height: 1.6;
+  color: var(--white-color);
+}
+
+.security-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: var(--margin-bottom-small);
+  font-size: var(--font-size-small);
+}
+
+.security-list li {
+  padding: var(--padding-small);
+  background-image: radial-gradient(
+    at top left,
+    var(--dark-background) 0%,
+    var(--darker-background) 100%
+  );
+  margin-bottom: var(--margin-bottom-small);
+  border-left: 5px solid var(--primary-color);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.security-list li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 -10px 26px -10px rgba(229, 255, 79, 0.3411764705882353);
+}
+
+@media (max-width: 768px) {
+  .security-title {
+    font-size: var(--font-size-medium);
+  }
+
+  .security-subtitle {
+    font-size: 1.5em;
+  }
+
+  .security-image {
+    max-width: 100%;
+  }
+
+  .security-text,
+  .security-list li {
+    font-size: 1em;
+  }
+}

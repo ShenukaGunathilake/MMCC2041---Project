@@ -1,0 +1,199 @@
+:root {
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgb(235, 255, 108, 1);
+  --c2: rgba(168, 239, 255, 0);
+  --bg-color: #1f2019;
+  --bg-color-hover: #141414;
+  --border-color: rgba(229, 255, 79, 0.341176);
+  --text-color: white;
+  --text-secondary-color: #999;
+  --padding-large: 40px;
+  --padding-small: 20px;
+  --gap: 20px;
+  --font-size-large: 36px;
+  --font-size-medium: 18px;
+  --font-size-small: 14px;
+  --font-weight-bold: bold;
+  --font-weight-light: 200;
+  --border-radius: 4px;
+  --shadow-elevation: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 -10px 26px -10px var(--border-color);
+}
+
+.applications-topic-container1 {
+  padding: var(--padding-large) var(--padding-small) var(--padding-small)
+    var(--padding-small);
+}
+
+.applications-topic-container2 {
+  padding: 0 var(--padding-small) var(--padding-small) var(--padding-small);
+}
+
+.applications-topic-container1 h2,
+.applications-topic-container2 h2 {
+  font-size: var(--font-size-large);
+  position: relative;
+  display: inline-block;
+}
+
+.applications-topic-container1 h2::before,
+.applications-topic-container2 h2::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: -10px;
+  width: 50%;
+  height: 4px;
+  background-color: #ebff6c;
+  z-index: -1;
+  border-radius: var(--border-radius);
+}
+
+.applications-blockchain-types-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: var(--gap);
+  padding: 10px;
+}
+
+.applications-blockchain-types-container .bit-type-image {
+  width: 100px;
+  transition: transform 0.5s;
+  transform-origin: left;
+}
+
+.applications-blockchain-types-container .bit-type-image:hover {
+  transform: scaleX(1.18);
+}
+
+.applications-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--gap);
+  padding: 10px;
+}
+
+.application-card {
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-elevation);
+  overflow: hidden;
+  border: 0.35rem solid;
+  border-image: conic-gradient(
+      from var(--angle),
+      var(--c2),
+      var(--c1) 0.1turn,
+      var(--c1) 0.15turn,
+      var(--c2) 0.25turn
+    )
+    30;
+  animation: borderRadial var(--d) linear infinite forwards;
+  background-image: radial-gradient(
+    at top left,
+    var(--bg-color) 0%,
+    var(--bg-color-hover) 100%
+  );
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.application-card {
+  border-image: radial-gradient(
+      ellipse at var(--gradX) var(--gradY),
+      var(--c1),
+      var(--c1) 10%,
+      var(--c2) 40%
+    )
+    30;
+  animation: borderRadial var(--d) linear infinite forwards;
+}
+
+.application-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-hover);
+}
+
+.application-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.application-card-content {
+  padding: 15px;
+}
+
+.application-card-category {
+  color: var(--text-color);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-medium);
+  margin-bottom: 10px;
+}
+
+.application-card-description {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-light);
+  margin-bottom: 20px;
+  color: var(--text-color);
+  text-align: left;
+}
+
+.application-card-date {
+  font-size: 0.85em;
+  color: var(--text-secondary-color);
+}
+
+@media (max-width: 768px) {
+  .application-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: "<percentage>";
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: true;
+}
+
+@keyframes borderRotate {
+  100% {
+    --angle: 420deg;
+  }
+}
+
+@keyframes borderRadial {
+  20% {
+    --gradX: 100%;
+    --gradY: 50%;
+  }
+  40% {
+    --gradX: 100%;
+    --gradY: 100%;
+  }
+  60% {
+    --gradX: 50%;
+    --gradY: 100%;
+  }
+  80% {
+    --gradX: 0%;
+    --gradY: 50%;
+  }
+  100% {
+    --gradX: 50%;
+    --gradY: 0%;
+  }
+}

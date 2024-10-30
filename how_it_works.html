@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Blockchain Works</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/how-it-works.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    <script src="scripts/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logos/logo.png" alt="Logo" id="logo" style="height: 80px;">
+        <h1>How Blockchain Works</h1>
+        <button id="toggle-menu">
+            <img src="images/icons/menu.png" alt="Menu" style="width: 25px; height: 25px;" class="logo-image">
+        </button>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html">Background</a></li>
+                <li><a href="how_it_works.html" class="active">How It Works</a></li>
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="security.html">Security</a></li>
+                <li><a href="future.html">Future</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+        <span class="tooltip" id="tooltip"></span>
+        <div class="overlay"></div>
+        <div class="close-btn">✖</div>
+
+        <div class="blockchain-basics">
+            <h2>Blockchain Basics</h2>
+            <div class="content-columns">
+                <div class="content-item">
+                    <p>A blockchain consists of a series of blocks, each containing a record of transactions. Each block
+                        contains three essential components:</p>
+                    <ul>
+                        <li><strong>Data:</strong> This includes information specific to the blockchain’s purpose, such
+                            as transaction details.</li>
+                        <li><strong>Hash:</strong> A unique identifier for each block.</li>
+                        <li><strong>Previous Hash:</strong> This connects each block to the one before it, creating a
+                            chain. Any change to the data in one block will alter its hash, breaking the chain, which is
+                            why blockchain is known for its security and immutability [5].</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows-container">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+
+        <div class="image-examples">
+            <figure>
+                <h5>Data in the block usually consists of transactions. A block can contain hundreds of transactions.
+                    Alice sending Bob $100 is an example of a transaction in a block</h5>
+                <figure>
+                    <img src="images/how-data-works.avif" alt="How data works" class="example-image">
+                </figure>
+                <figcaption>Source:
+                    https://hackernoon.com/blockchain-a-short-and-simple-explanation-with-pictures-d60d652f207f
+                </figcaption>
+            </figure>
+
+            <figure>
+                <h5>Hash is like a fingerprint for the data in a
+                    block and it is always unique to every block in the Blockchain. When the data in a block changes,
+                    the hash will also change.</h5>
+                <figure>
+                    <img src="images/hash.avif" alt="Hash" class="example-image">
+                </figure>
+                <figcaption>Source:
+                    https://hackernoon.com/blockchain-a-short-and-simple-explanation-with-pictures-d60d652f207f
+                </figcaption>
+            </figure>
+
+            <figure>
+                <h5>A block also contains the hash of the previous block. Hence forming a chain structure. Combining the
+                    above three together, this is what a Blockchain will look like.</h5>
+                <figure>
+                    <img src="images/previous-block.avif" alt="Previous block" class="example-image">
+                </figure>
+                <figcaption>Source:
+                    https://hackernoon.com/blockchain-a-short-and-simple-explanation-with-pictures-d60d652f207f
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="divider-container">
+            <div class="divider"></div>
+            <div class="divider-circle"></div>
+        </div>
+
+        <div class="transaction-process">
+            <h2>How Transactions Are Added</h2>
+            <div class="content-columns">
+                <div class="content-item">
+                    <ol>
+                        <li><strong>Verification:</strong> When a transaction is initiated, it is grouped into blocks
+                            and sent for verification to the nodes (computers) on the network. Nodes ensure that the
+                            transaction is valid before proceeding [6].</li>
+                        <li><strong>Consensus:</strong> The nodes reach an agreement on the validity of transactions
+                            using consensus mechanisms. Common types include Proof of Work (PoW), where computers solve
+                            complex puzzles to validate a block, and Proof of Stake (PoS), where validators are chosen
+                            based on their 'stake' in the network [7].
+                        </li>
+                        <li><strong>Addition to the Chain:</strong> Once consensus is achieved, the block is added to
+                            the chain, making it immutable and part of the permanent record [8].</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows-container">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+
+        <div class="image-examples">
+            <figure>
+                <h5>How does a transaction get into the blockchain technology it</h5>
+                <figure>
+                    <img src="images/transaction.jpg" alt="How data works" class="example-image">
+                </figure>
+                <figcaption>Source:
+                    https://www.slideteam.net/how-does-a-transaction-get-into-the-blockchain-technology-it.html
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="divider-container">
+            <div class="divider"></div>
+            <div class="divider-circle"></div>
+        </div>
+
+        <div class="consensus-mechanisms">
+            <h2>Consensus Mechanisms</h2>
+            <div class="content-columns">
+                <div class="content-item">
+                    <ul>
+                        <li><strong>Proof of Work (PoW):</strong> This competitive process requires miners to solve
+                            complex mathematical puzzles. It is highly secure but energy-intensive. Bitcoin uses PoW as
+                            its consensus mechanism [9].</li>
+                        <li><strong>Proof of Stake (PoS):</strong> Validators are chosen based on the number of coins
+                            they hold and are willing to put up as collateral. This method is more energy-efficient than
+                            PoW and is used by blockchains like Ethereum 2.0 [10].</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows-container">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+
+        <div class="comparison-container">
+            <h1>Proof Of Work (PoW) <span>vs</span> Proof of Stake (PoS)</h1>
+
+            <div class="comparison">
+                <div class="block pow">
+                    <img class="icon" src="images/icons/pow1.png" alt="Pow 1" />
+                    <p>The ability to mine a block is determined by the computational power of each miner.</p>
+                </div>
+                <div class="block pos">
+                    <img class="icon" src="images/icons/pos1.png" alt="Pos 1" />
+                    <p>The ability to mine is determined by how many tokens of this currency the user owns.</p>
+                </div>
+
+                <div class="block pow">
+                    <img class="icon" src="images/icons/pow2.png" alt="Pow 2" />
+                    <p>A reward is given to the miner who solves each block.</p>
+                </div>
+                <div class="block pos">
+                    <img class="icon" src="images/icons/pos2.png" alt="Pos 2" />
+                    <p>In PoS, the miner does not earn rewards but is paid with network fees.</p>
+                </div>
+
+                <div class="block pow">
+                    <img class="icon" src="images/icons/pow3.png" alt="Pow 3" />
+                    <p>In PoW, hackers need 51% of the network computing power to execute a 51% attack, which is highly
+                        unlikely but not impossible.</p>
+                </div>
+                <div class="block pos">
+                    <img class="icon" src="images/icons/pos3.png" alt="Pos 3" />
+                    <p>In PoS, a hacker would need to own 51% of all cryptocurrencies on the network to execute an
+                        attack, which is practically impossible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logos/logo.png" alt="Logo">
+                <p>“The blockchain does one thing: It replaces third-party trust with mathematical proof that something
+                    happened.” </p>
+            </div>
+            <div class="footer-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="index.html">Background</a></li>
+                    <li><a href="how_it_works.html">How it works</a></li>
+                    <li><a href="applications.html">Applications</a></li>
+                    <li><a href="security.html">Security</a></li>
+                    <li><a href="future.html">Future</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <img src="images/shenuka.jpg" alt="Shenuka Gunathilake" class="profile-picture" />
+                <h3>Shenuka Gunathilake</h3>
+                <p>Web and Mobile App Developer</p>
+                <p>Undergraduate at Macquarie University</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/shenuka/?originalSubdomain=au" target="_blank">Shenuka Gunathilake</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Blockchain Project. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

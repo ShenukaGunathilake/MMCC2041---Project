@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Security</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/security.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    <script src="scripts/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logos/logo.png" alt="Logo" id="logo" style="height: 80px;">
+        <h1>Blockchain Security</h1>
+        <button id="toggle-menu">
+            <img src="images/icons/menu.png" alt="Menu" style="width: 25px; height: 25px;" class="logo-image">
+        </button>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html">Background</a></li>
+                <li><a href="how_it_works.html">How It Works</a></li>
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="security.html" class="active">Security</a></li>
+                <li><a href="future.html">Future</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <span class="tooltip" id="tooltip"></span>
+        <div class="overlay"></div>
+        <div class="close-btn">✖</div>
+
+        <div class="security-container">
+            <section class="security-section">
+                <h3 class="security-subtitle">Cryptographic Security</h3>
+
+                <p class="security-text">
+                    Blockchain employs advanced cryptographic techniques to secure data. Transactions are encrypted, and
+                    the hash function ensures that any change to data within a block will alter its hash, making it
+                    evident if tampering has occurred. This feature is fundamental to blockchain's reputation as a
+                    secure
+                    technology <a href=" https://www.investopedia.com/terms/1/51-attack.asp" class="tooltip-link"
+                        data-tooltip="Visit Investopedia - 51% Attack for more information" target="_blank">[REF:
+                        16]</a>.
+                </p>
+
+                <div class="security-image-wrapper">
+                    <figure>
+                        <img src="images/security/cryptographic-security.png" alt="Cryptographic Security"
+                            class="security-image example-image">
+                    </figure>
+                    <figcaption>Source:
+                        https://www.edureka.co/blog/what-is-cryptography/
+                    </figcaption>
+                </div>
+            </section>
+
+            <div class="divider-container">
+                <div class="divider"></div>
+                <div class="divider-circle"></div>
+            </div>
+
+            <section class="security-section">
+                <h3 class="security-subtitle">Consensus and Tamper Resistance</h3>
+                <p class="security-text">
+                    Blockchain's consensus mechanisms, like PoW and PoS, prevent tampering. Because of these methods, it
+                    is exceedingly difficult for any one person or entity to alter the blockchain. Additionally, each
+                    new
+                    block in the chain is connected to the previous one through cryptographic hashing, further enhancing
+                    security <a href="https://www.coindesk.com/tag/blockchain-security/" class="tooltip-link"
+                        data-tooltip="Visit CoinDesk - Blockchain Security for more information" target="_blank">[REF:
+                        17]</a>.
+                </p>
+                <div class="security-image-wrapper">
+                    <figure>
+                        <img src="images/security/cosensus-mechanism.jpg" alt="Consensus and Tamper Resistance"
+                            class="security-image example-image">
+                    </figure>
+                    <figcaption>Source:
+                        https://www.slideteam.net/consensus-mechanism-algorithms-in-blockchain-types-training-ppt.html
+                    </figcaption>
+                </div>
+            </section>
+
+            <div class="divider-container">
+                <div class="divider"></div>
+                <div class="divider-circle"></div>
+            </div>
+
+            <section class="security-section">
+                <h3 class="security-subtitle">Potential Risks</h3>
+                <ul class="security-list">
+                    <li>51% Attack: If a single entity gains control of more than 50% of the network's computational
+                        power, it could theoretically alter the blockchain. This scenario is rare and difficult to
+                        execute,
+                        particularly on larger blockchains like Bitcoin <a
+                            href="https://ieeexplore.ieee.org/courses/details/EDP699" class="tooltip-link"
+                            data-tooltip="Visit IoT Security: Blockchain Applications for more information"
+                            target="_blank">[REF:
+                            18]</a>.
+                    </li>
+                    <li>Smart Contract Vulnerabilities: In blockchains like Ethereum, which support smart contracts,
+                        bugs or vulnerabilities within the code can be exploited by hackers. Proper auditing and secure
+                        coding
+                        practices can help minimize these risks <a
+                            href="https://www.nasdaq.com/articles/the-environmental-impact-of-blockchain-technology"
+                            class="tooltip-link"
+                            data-tooltip="Visit The Environmental Impact of Blockchain Technology for more information"
+                            target="_blank">[REF:
+                            19]</a>.
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logos/logo.png" alt="Logo">
+                <p>“The blockchain does one thing: It replaces third-party trust with mathematical proof that something
+                    happened.” </p>
+            </div>
+            <div class="footer-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="index.html">Background</a></li>
+                    <li><a href="how_it_works.html">How it works</a></li>
+                    <li><a href="applications.html">Applications</a></li>
+                    <li><a href="security.html">Security</a></li>
+                    <li><a href="future.html">Future</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <img src="images/shenuka.jpg" alt="Shenuka Gunathilake" class="profile-picture" />
+                <h3>Shenuka Gunathilake</h3>
+                <p>Web and Mobile App Developer</p>
+                <p>Undergraduate at Macquarie University</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/shenuka/?originalSubdomain=au" target="_blank">Shenuka Gunathilake</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Blockchain Project. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+:root {
+  --primary-color: #ebff6c;
+  --secondary-color: #003366;
+  --visited-color: #737d36;
+  --dark-background: #1f2019;
+  --darker-background: #141414;
+  --light-text-color: #fff;
+  --font-size-small: 16px;
+  --font-size-large: 36px;
+  --padding-large: 40px;
+  --padding-medium: 20px;
+  --margin-bottom-large: 40px;
+  --margin-bottom-small: 10px;
+}
+
+.references-content {
+  padding: var(--padding-large) var(--padding-medium) var(--padding-medium);
+}
+
+.references-conclusion {
+  margin-bottom: var(--margin-bottom-large);
+}
+
+.references-conclusion h2 {
+  font-size: var(--font-size-large);
+  position: relative;
+  display: inline-block;
+}
+
+.references-conclusion p {
+  font-size: var(--font-size-small);
+}
+
+.references-list h2 {
+  font-size: var(--font-size-large);
+  position: relative;
+  display: inline-block;
+  margin-bottom: var(--margin-bottom-small);
+}
+
+.references-items {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.references-items li {
+  margin-bottom: var(--margin-bottom-small);
+}
+
+.references-items li a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.references-items li a:hover {
+  color: var(--secondary-color);
+}
+
+.references-items li a:visited {
+  color: var(--visited-color);
+}
+
+.references-conclusion h2::before,
+.references-list h2::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: -10px;
+  width: 50%;
+  height: 4px;
+  background-color: var(--primary-color);
+  z-index: -1;
+  border-radius: 4px;
+}
+
+
